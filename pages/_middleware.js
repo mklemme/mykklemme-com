@@ -10,7 +10,7 @@ export function middleware(nextRequest, _fetchEvent) {
     nextRequest.headers.get("x-forwarded-proto") !== "https" ||
     nextRequest.nextUrl.hostname.startsWith(wwwSubdomain)
   ) {
-    return nextResponse.redirect(`https://${process.env.HOST || nextRequest.nextUrl.hostname.replace(wwwSubdomain, "")}/${nextRequest.nextUrl.pathname}`, 301)
+    return nextResponse.redirect(`https://${process.env.HOST || nextRequest.nextUrl.hostname.replace(wwwSubdomain, "")}${nextRequest.nextUrl.pathname}`, 301)
   }
 
   return nextResponse.next()
