@@ -32,12 +32,12 @@ export default function Home() {
                   href="https://dropbox.com">Dropbox</a> &amp; <a href="https://docsend.com">Docsend</a>.
                 </p>
                 <p>
-                  My super power is learning and my mission is to build things that make people's lives better.
+                  My super power is learning and my mission is to build things that make peoples&rsquo; lives better.
                 </p>
               </div>
             </div>
             <div className="col text-center">
-              <img src="/images/profile-avatar.png" style={{width: 16 * 10}}  className="pixel img-fluid" />
+              <img src="/images/profile-avatar.png" style={{width: 16 * 10}}  className="pixel img-fluid user-avatar" />
             </div>
           </div>
         </div>
