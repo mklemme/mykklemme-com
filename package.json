@@ -1,6 +1,9 @@
 {
   "name": "mykklemme-com",
   "private": true,
+  "engines": {
+    "node": ">=17.2"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
